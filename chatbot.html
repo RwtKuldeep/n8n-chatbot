@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Me Anything</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #3c4046;
+        /* background-color: aquamarine; */
+      }
+      .container {
+        /* background: white; */
+        background-color: rgb(3, 26, 18);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 90%;
+        max-width: 500px;
+      }
+      h1 {
+        color: rgb(246, 244, 244);
+      }
+      input[type="text"] {
+        padding: 0.5rem;
+        width: 100%;
+        margin-top: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+      textarea {
+        padding: 0.5rem;
+        width: 100%;
+        margin-top: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        resize: vertical; /* Allow user to manually resize */
+        min-height: 80px;
+      }
+      button {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="http://localhost:5678/webhook/959136cf-2062-4547-af8d-8956cd9d1dd1"
+        method="POST"
+      >
+        <h1>Ask Me Anything</h1>
+        <input type="text" placeholder="Type your question..." />
+        <textarea
+          id="output"
+          placeholder="Output will appear here..."
+        ></textarea>
+        <button type="submit">Enter</button>
+      </form>
+    </div>
+  </body>
+</html>
